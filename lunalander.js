@@ -1,3 +1,26 @@
+// setup of buttons
+function setup() {
+  createCanvas(600, 500);
+  button = createButton("Play again!");
+  button.mousePressed(playAgain);
+  button.position(270, 450);
+  button.style("color:white");
+  button.style("background-color: rgb(155, 0, 0)");
+  button.style("border-radius", "20px");
+  button.style("border", "none");
+  button.size(100, 30);
+  button.hide();
+  button1 = createButton("Start a game!");
+  button1.hide();
+  button1.mousePressed(startGame);
+  button1.position(282.5, 420);
+  button1.style("color:white");
+  button1.style("background-color: rgb(155, 0, 0)");
+  button1.style("border-radius", "20px");
+  button1.style("border", "none");
+  button1.size(100, 30);
+}
+
 // variables
 let catY = 100;
 let catX = 300;
@@ -17,27 +40,6 @@ let pic1;
 // moon image preload
 function preload() {
   pic1 = loadImage("moon.png");
-}
-// setup of buttons
-function setup() {
-  button = createButton("Play again!");
-  button.mousePressed(playAgain);
-  button.position(290, 450);
-  button.style("color:white");
-  button.style("background-color: rgb(155, 0, 0)");
-  button.style("border-radius", "20px");
-  button.style("border", "none");
-  button.size(100, 30);
-  button.hide();
-  button1 = createButton("Start a game!");
-  button1.hide();
-  button1.mousePressed(startGame);
-  button1.position(282.5, 420);
-  button1.style("color:white");
-  button1.style("background-color: rgb(155, 0, 0)");
-  button1.style("border-radius", "20px");
-  button1.style("border", "none");
-  button1.size(100, 30);
 }
 
 // cat
@@ -110,8 +112,8 @@ let stars = [];
 
 for (let i = 0; i < 100; i++) {
   const star = {
-    x: Math.floor(Math.random() * width),
-    y: Math.floor(Math.random() * height),
+    x: Math.floor(Math.random() * 600),
+    y: Math.floor(Math.random() * 600),
     alpha: Math.random(),
   };
   stars.push(star);
