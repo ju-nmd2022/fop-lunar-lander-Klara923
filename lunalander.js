@@ -13,7 +13,7 @@ function setup() {
   button1 = createButton("Start a game!");
   button1.hide();
   button1.mousePressed(startGame);
-  button1.position(282.5, 420);
+  button1.position(265, 420);
   button1.style("color:white");
   button1.style("background-color: rgb(155, 0, 0)");
   button1.style("border-radius", "20px");
