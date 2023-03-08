@@ -120,7 +120,7 @@ for (let i = 0; i < 100; i++) {
 }
 
 // screen1 = start screen
-
+// The following 18 lines of code was adapted from Garrit's video
 function screen1() {
   background(0, 0, 0);
   // stars
@@ -160,9 +160,8 @@ let alpha = 0;
 // screen2 = game screen
 function screen2() {
   background(0, 0, 0);
-
   background(0, 0, 0);
-
+  // The following 15 lines of code was adapted from Garrit's video
   for (let star of stars) {
     fill(255, 255, 255, Math.abs(Math.sin(star.alpha) * 255));
 
@@ -259,7 +258,7 @@ function screen2() {
 // screen3 = first ending, cat is dead
 function screen3() {
   background(0, 0, 0);
-
+  // The following 15 lines of code was adapted from Garrit's video
   for (let star of stars) {
     fill(255, 255, 255, Math.abs(Math.sin(star.alpha) * 255));
 
@@ -357,6 +356,7 @@ function emojix(x1, y1, s1) {
 // screen4 = second ending, cat sleeps
 function screen4() {
   background(0, 0, 0);
+  // The following 16 lines of code was adapted from Garrit's video
   // stars
   for (let star of stars) {
     fill(255, 255, 255, Math.abs(Math.sin(star.alpha) * 255));
